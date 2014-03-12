@@ -1,0 +1,124 @@
+
+//wireframe "brand"
+@grid-gutter-width: 10px; //overrides bootstrap
+@vertical-gutter: 10px;
+@base-padding: 10px;
+@border-radius: 2px;
+
+// breakpoints from bootstrap
+// in case you need them separately
+// or want to override
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+//buttons
+@brand-primary:         #08c;
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+
+// risk colors
+.risk-color-low { color: #30A567; }
+.risk-color-med { color: #CFB12D; }
+.risk-color-high { color: #CF0000; }
+
+body {
+	color: #4B4B4B;
+	font: normal 14px "Open Sans", sans-serif;
+	background: #ccc;
+	line-height: 20px;
+}
+
+.nav-container {
+	padding-top: @vertical-gutter;
+	padding-left: 0;
+}
+
+.main-container {
+	padding: @base-padding;
+	background: #eee;
+	border: 1px solid #dddddd;
+	border-top: 0;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+
+a {
+	color: #08c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #005580;
+	text-decoration: underline;
+}
+
+.brand-header {
+	background: #fff;
+	border-bottom: 10px solid #eee;
+	color: #333;
+	h1 {
+		font: normal 20px helvetica, arial, sans-serif;
+		padding-top: 4px;
+		margin-left: @base-padding;
+	}
+	.container {
+		
+	}
+	.container .logo {
+		float: left;
+		width: 100px;
+		height: 72px;
+		margin: @base-padding;
+		@media(min-width:@screen-sm) {
+			margin-left: 0;
+		}
+		background: url(../img/logo-hoovers.png) 0 0 no-repeat;
+	}
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background: #eee;
+}
+
+.primary-widget-colors {
+	border: 1px solid #c2c6ca;
+	background: #fff;
+}
+
+.primary-widget-header-colors {
+	#gradient > .vertical(#eee, #fff);
+	color: #23272e;
+	border-bottom: 1px solid #c2c6ca;
+}
+
+.primary-widget-header-text {
+	font: bold 1.4em Helvetica, Arial, serif;
+	padding: 0;
+	margin: 0;
+
+}
+
+.dnb-company-name {
+	color: #333;
+	font: normal 28px "Times New Roman", times, serif;
+	font-weight: bold;
+	padding: @base-padding ;
+	text-align: center;
+	// @media(min-width:@screen-md) {
+	// 	margin-left: @base-padding;
+	// 	margin-right: @base-padding;
+	//}
+}
+
+.dnb-company-name h1 {
+	padding: 0;
+	margin: 0;
+}
+
+.bignumber {
+	font-weight: bold;
+	font-size: 36px;
+}

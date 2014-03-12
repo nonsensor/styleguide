@@ -1,0 +1,73 @@
+// general widget box, header + text
+
+.dnb-widget-inner {
+	.primary-widget-colors();
+	border-radius: @border-radius;
+}
+
+.dnb-widget-content {
+	padding: @base-padding;
+}
+
+.dnb-widget-header,
+.dnb-widget-header-alt {
+	padding: @base-padding;
+	h3 {
+		.primary-widget-header-text();
+	}
+}
+
+.dnb-widget-header-alt {
+	.primary-widget-header-colors();
+	.border-top-radius(@border-radius);
+}
+
+// Full size widgets
+.dnb-widget-row {
+	.make-row();
+	margin-top: @vertical-gutter;
+	.dnb-widget {
+
+	}
+}
+
+// Mini widgets
+.dnb-widget-mini-row {
+	.make-row(); //bootstrap
+	margin-top: @vertical-gutter;
+	.dnb-widget-mini {
+		margin-bottom: @vertical-gutter;
+		//bootstrap
+		.make-sm-column(6);
+		.make-md-column(3);
+		@media(min-width: @screen-md) {
+			margin-bottom: 0;
+		}
+		//end bootstrap
+
+	}
+}
+
+.dnb-widget-mini {
+	position: relative;
+	.dnb-widget-inner {
+		min-height: 150px;
+	}
+}
+
+.dnb-widget-mini .dnb-widget-bignumber {
+	.bignumber();
+}
+
+.dnb-widget-change {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	bottom: @base-padding;
+}
+
+.dnb-change-up,
+.dnb-change-down,
+.dnb-change-none {
+	font-size: 1.4em;
+}

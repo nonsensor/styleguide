@@ -1,0 +1,69 @@
+
+//wireframe "brand"
+@grid-gutter-width: 20px; //overrides bootstrap
+@vertical-gutter: 20px;
+@base-padding: 10px;
+@border-radius: 0;
+
+body {
+	color: #4B4B4B;
+	font: normal 14px "Open Sans", sans-serif;
+}
+
+.brand-header {
+	background: #444;
+	color: #fff;
+	h1 {
+		font-size: 24px;
+		margin-left: @base-padding;
+	}
+	.container {
+		
+	}
+	.container .logo {
+		float: right;
+		width: 52px;
+		height: 52px;
+		margin: @base-padding;
+		border: 1px solid #fff;
+		background: url(../img/logo-dnb.gif) 0 0 no-repeat;
+	}
+}
+
+.primary-widget-colors {
+	border: 2px solid #E9E9E9;
+	background: #f7f7f7
+}
+
+.primary-widget-header-colors {
+	background: #a7a7a7;
+	color: #fff;
+}
+
+.primary-widget-header-text {
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+}
+
+.dnb-company-name {
+	background: #6f6f6f;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	padding: @base-padding;
+	@media(min-width:@screen-md) {
+		margin-left: @base-padding;
+		margin-right: @base-padding;
+	}
+}
+
+.dnb-company-name h1 {
+	padding: 0;
+	margin: 0;
+}
+
+.bignumber {
+	font-weight: bold;
+	font-size: 36px;
+}
